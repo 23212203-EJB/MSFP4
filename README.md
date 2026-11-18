@@ -31,7 +31,7 @@ México.
 
 ------------------------------------------------------------------------
 
-`<a id="contenido">`{=html}`</a>`{=html} \## Contenido
+`<a id="contenido">`{=html}`</a>`{=html} ## Contenido
 
 1.  [Resumen](#resumen)
 2.  [Competencia y objetivos](#objetivos)
@@ -54,7 +54,7 @@ México.
 
 ------------------------------------------------------------------------
 
-`<a id="resumen">`{=html}`</a>`{=html} \## Resumen
+`<a id="resumen">`{=html}`</a>`{=html} ## Resumen
 
 La práctica tiene como propósito **modelar, analizar y simular el
 comportamiento del sistema endocrino** mediante una analogía entre un
@@ -88,7 +88,7 @@ estabilidad; MATLAB; Simulink; Python; protoboard; osciloscopio.
 
 ------------------------------------------------------------------------
 
-`<a id="objetivos">`{=html}`</a>`{=html} \## Competencia y objetivos
+`<a id="objetivos">`{=html}`</a>`{=html} ## Competencia y objetivos
 
 ### Competencia a desarrollar
 
@@ -134,7 +134,7 @@ mediante instrumentación electrónica.
 
 ------------------------------------------------------------------------
 
-`<a id="temario">`{=html}`</a>`{=html} \## Relación con el temario
+`<a id="temario">`{=html}`</a>`{=html} ## Relación con el temario
 
 La práctica integra contenidos de la asignatura **Modelado de Sistemas
 Fisiológicos (IBF-1020)**, relacionando los fundamentos del modelado
@@ -177,7 +177,7 @@ competencia general de la asignatura.
 
 ------------------------------------------------------------------------
 
-`<a id="analogia">`{=html}`</a>`{=html} \## Modelo fisiológico y
+`<a id="analogia">`{=html}`</a>`{=html} ## Modelo fisiológico y
 analogía eléctrica
 
 ### 1. Modelo fisiológico del sistema endocrino
@@ -293,7 +293,7 @@ eliminación del cortisol.
 
 ------------------------------------------------------------------------
 
-`<a id="modelo">`{=html}`</a>`{=html} \## Formulación matemática
+`<a id="modelo">`{=html}`</a>`{=html} ## Formulación matemática
 
 ### 1. Ecuaciones integro-diferenciales
 
@@ -302,33 +302,24 @@ establecen las siguientes relaciones entre las corrientes, los voltajes
 y los componentes eléctricos.
 
 La corriente de entrada se representa mediante:
-
-$$
+```math
 F_e(t)=F_c(t)+F_s(t)
-$$
-
+```
 Aplicando la ley de Ohm:
-
-$$
+```math
 F_e(t)=\frac{V_e(t)-V_s(t)}{R_1}
-$$
-
+```
 La corriente que circula por el capacitor se expresa como:
-
-$$
+```math
 F_c(t)=C\frac{dV_s(t)}{dt}
-$$
-
+```
 Para la rama que contiene la inductancia y la resistencia $R_2$:
-
-$$
+```math
 V_s(t)=L\frac{dF_s(t)}{dt}+R_2F_s(t)
-$$
-
+```
 Sustituyendo las relaciones anteriores y desarrollando las expresiones
 correspondientes, se obtiene la ecuación diferencial del sistema:
-
-$$
+```math
 \boxed{
 R_1LC\frac{d^2V_s(t)}{dt^2}
 +
@@ -338,8 +329,7 @@ R_1LC\frac{d^2V_s(t)}{dt^2}
 =
 L\frac{dV_e(t)}{dt}+R_2V_e(t)
 }
-$$
-
+```
 Esta expresión describe el comportamiento dinámico del circuito
 eléctrico equivalente de segundo orden.
 
@@ -347,8 +337,7 @@ eléctrico equivalente de segundo orden.
 
 Aplicando la transformada de Laplace a la ecuación diferencial,
 considerando condiciones iniciales nulas, se obtiene:
-
-$$
+```math
 R_1LCs^2V_s(s)
 +
 (L+R_1R_2C)sV_s(s)
@@ -356,19 +345,16 @@ R_1LCs^2V_s(s)
 (R_1+R_2)V_s(s)
 =
 LsV_e(s)+R_2V_e(s)
-$$
-
+```
 Factorizando las expresiones correspondientes:
-
-$$
+```math
 V_s(s)
 \left[
 R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)
 \right]
 =
 V_e(s)(Ls+R_2)
-$$
-
+```
 Por lo tanto, la función de transferencia general del sistema es:
 
 ``` math
@@ -395,66 +381,46 @@ Donde:
 
 Para la condición de función normal se utilizan los siguientes
 parámetros:
-
-$$
+```math
 R_1=1\,k\Omega
-$$
-
-$$
+``````math
 R_2=100\,k\Omega
-$$
-
-$$
+``````math
 L=100\,mH
-$$
-
-$$
+``````math
 C=1\,\mu F
-$$
-
+```
 La función de transferencia correspondiente se obtiene sustituyendo los
 parámetros de CONTROL en la función de transferencia general:
-
-$$
+```math
 G_C(s)=
 \frac{(100\,mH)s+100\,k\Omega}
 {(1\,k\Omega)(100\,mH)(1\,\mu F)s^2+
 [100\,mH+(1\,k\Omega)(100\,k\Omega)(1\,\mu F)]s+
 (1\,k\Omega+100\,k\Omega)}
-$$
-
+```
 ### 4. Función de transferencia para CASO
 
 Para la condición de síndrome de Cushing se utilizan los siguientes
 parámetros:
-
-$$
+```math
 R_1=1\,k\Omega
-$$
-
-$$
+``````math
 R_2=1\,k\Omega
-$$
-
-$$
+``````math
 L=100\,mH
-$$
-
-$$
+``````math
 C=1000\,\mu F
-$$
-
+```
 La función de transferencia correspondiente se obtiene sustituyendo los
 parámetros del CASO en la función de transferencia general:
-
-$$
+```math
 G_A(s)=
 \frac{(100\,mH)s+1\,k\Omega}
 {(1\,k\Omega)(100\,mH)(1000\,\mu F)s^2+
 [100\,mH+(1\,k\Omega)(1\,k\Omega)(1000\,\mu F)]s+
 (1\,k\Omega+1\,k\Omega)}
-$$
-
+```
 Las funciones de transferencia representan las dos condiciones
 fisiológicas consideradas en la práctica y permiten comparar el
 comportamiento del modelo ante una misma señal de entrada.
@@ -463,39 +429,29 @@ comportamiento del modelo ante una misma señal de entrada.
 
 ------------------------------------------------------------------------
 
-`<a id="analisis">`{=html}`</a>`{=html} \## Análisis de estabilidad y
+`<a id="analisis">`{=html}`</a>`{=html} ## Análisis de estabilidad y
 error en estado estacionario
 
 ### 1. Estabilidad en lazo abierto
 
 Para analizar la estabilidad del sistema se considera el denominador de
 la función de transferencia general:
-
-$$
+```math
 R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)=0
-$$
-
+```
 Los polos del sistema se obtienen mediante la ecuación cuadrática:
-
-$$
+```math
 \lambda_{1,2}=
 \frac{-b\pm\sqrt{b^2-4ac}}{2a}
-$$
-
+```
 Donde:
-
-$$
+```math
 a=R_1LC
-$$
-
-$$
+``````math
 b=L+R_1R_2C
-$$
-
-$$
+``````math
 c=R_1+R_2
-$$
-
+```
 **CONTROL**
 
 Utilizando los parámetros:
@@ -506,15 +462,11 @@ Utilizando los parámetros:
 -   $C=1\,\mu F$
 
 Se obtienen los siguientes polos:
-
-$$
+```math
 \lambda_1=-1,010.01
-$$
-
-$$
+``````math
 \lambda_2=-999.99\times10^3
-$$
-
+```
 **CASO**
 
 Utilizando los parámetros:
@@ -525,15 +477,11 @@ Utilizando los parámetros:
 -   $C=1000\,\mu F$
 
 Se obtienen los siguientes polos:
-
-$$
+```math
 \lambda_1=-2.0002
-$$
-
-$$
+``````math
 \lambda_2=-9.9999\times10^3
-$$
-
+```
 De acuerdo con los valores obtenidos, ambos modelos presentan polos con
 parte real negativa, por lo que son estables en lazo abierto.
 
@@ -543,89 +491,69 @@ Para analizar el error en estado estacionario se considera una entrada
 escalón unitario y se utiliza el teorema del valor final.
 
 La expresión correspondiente es:
-
-$$
+```math
 e_{ss}=
 \lim_{s\to0}
 s\left[
 \frac{1}{s}
 \left(1-\frac{V_s(s)}{V_e(s)}\right)
 \right]
-$$
-
+```
 **CONTROL**
 
 Para la condición de función normal, el error en estado estacionario se
 expresa como:
-
-$$
+```math
 e_{ss,C}=1-\frac{R_2}{R_1+R_2}
-$$
-
+```
 Sustituyendo los valores utilizados:
-
-$$
+```math
 e_{ss,C}
 =
 1-\frac{100\,k\Omega}{1\,k\Omega+100\,k\Omega}
-$$
-
+```
 El resultado obtenido es:
-
-$$
+```math
 \boxed{
 e_{ss,C}=9.9009\times10^{-3}\,V
 }
-$$
-
+```
 **CASO**
 
 Para la condición de síndrome de Cushing, el error en estado
 estacionario se expresa como:
-
-$$
+```math
 e_{ss,A}=1-\frac{R_2}{R_1+R_2}
-$$
-
+```
 Sustituyendo los valores utilizados:
-
-$$
+```math
 e_{ss,A}
 =
 1-\frac{1\,k\Omega}{1\,k\Omega+1\,k\Omega}
-$$
-
+```
 El resultado obtenido es:
-
-$$
+```math
 \boxed{
 e_{ss,A}=0.5\,V
 }
-$$
-
+```
 ### 3. Diferencia entre los errores en estado estacionario
 
 La diferencia entre los resultados obtenidos para ambas condiciones se
 expresa mediante:
-
-$$
+```math
 e(t)=V_{s,CONTROL}(t)-V_{s,CASO}(t)
-$$
-
+```
 Considerando los valores obtenidos en el análisis:
-
-$$
+```math
 e(t)=9.9009\times10^{-3}-0.5
-$$
-
+```
 Por lo tanto:
-
-$$
+```math
 \boxed{
 e(t)=-0.49009\,V
 }
-$$
-
+```
 Estos resultados permiten comparar el comportamiento de las respuestas
 en estado estacionario de ambas condiciones fisiológicas.
 
@@ -633,7 +561,7 @@ en estado estacionario de ambas condiciones fisiológicas.
 
 ------------------------------------------------------------------------
 
-`<a id="senales">`{=html}`</a>`{=html} \## Señal de entrada y
+`<a id="senales">`{=html}`</a>`{=html} ## Señal de entrada y
 condiciones de simulación
 
 La señal utilizada para evaluar el comportamiento de los modelos
@@ -679,7 +607,7 @@ lazo abierto.
 
 ------------------------------------------------------------------------
 
-`<a id="matlab">`{=html}`</a>`{=html} \## Implementación en MATLAB y
+`<a id="matlab">`{=html}`</a>`{=html} ## Implementación en MATLAB y
 Simulink
 
 La implementación computacional se realiza mediante MATLAB y Simulink,
@@ -737,7 +665,7 @@ las simulaciones.
 
 ------------------------------------------------------------------------
 
-`<a id="python">`{=html}`</a>`{=html} \## Reproducción en Python
+`<a id="python">`{=html}`</a>`{=html} ## Reproducción en Python
 
 La implementación en Python se realiza mediante **Visual Studio Code**,
 con el propósito de reproducir y comparar las respuestas obtenidas en
@@ -765,7 +693,7 @@ MATLAB/Simulink.
 
 ------------------------------------------------------------------------
 
-`<a id="circuito">`{=html}`</a>`{=html} \## Implementación física del
+`<a id="circuito">`{=html}`</a>`{=html} ## Implementación física del
 circuito RLC
 
 Además de las simulaciones computacionales, la práctica contempla la
@@ -818,14 +746,14 @@ eléctricos.
 
 ![Circuito físico RLC](circuito_fisico_endocrino.jpeg)
 
-`<sub>`{=html}Figura. Implementación física del circuito eléctrico
-equivalente del sistema endocrino.`</sub>`{=html}
+<sub>Figura. Implementación física del circuito eléctrico
+equivalente del sistema endocrino.</sub>
 
 [Volver al contenido](#contenido)
 
 ------------------------------------------------------------------------
 
-`<a id="resultados">`{=html}`</a>`{=html} \## Resultados y comparación
+`<a id="resultados">`{=html}`</a>`{=html} ## Resultados y comparación
 de respuestas
 
 Los resultados de la práctica permiten comparar el comportamiento del
@@ -885,7 +813,7 @@ ambas condiciones.
 
 ------------------------------------------------------------------------
 
-`<a id="diagrama">`{=html}`</a>`{=html} \## Diagrama del sistema
+`<a id="diagrama">`{=html}`</a>`{=html} ## Diagrama del sistema
 endocrino
 
 A continuación, se presenta una representación gráfica del sistema
@@ -912,15 +840,15 @@ asociados a las condiciones CONTROL y CASO.
 ![Diagrama del sistema endocrino: comparación entre CONTROL y CASO
 (síndrome de Cushing)](diagrama_sistema_endocrino.png)
 
-`<sub>`{=html}Figura. Representación del sistema endocrino y su modelo
+<sub>Figura. Representación del sistema endocrino y su modelo
 eléctrico equivalente en condiciones CONTROL y CASO (síndrome de
-Cushing). Elaboración propia mediante BioRender.`</sub>`{=html}
+Cushing). Elaboración propia mediante BioRender.</sub>
 
 [Volver al contenido](#contenido)
 
 ------------------------------------------------------------------------
 
-`<a id="flujo">`{=html}`</a>`{=html} \## Flujo de trabajo
+`<a id="flujo">`{=html}`</a>`{=html} ## Flujo de trabajo
 
 ``` mermaid
 flowchart TD
@@ -953,7 +881,7 @@ y la comprobación experimental de las dos condiciones fisiológicas.
 
 ------------------------------------------------------------------------
 
-`<a id="actividades">`{=html}`</a>`{=html} \## Actividades del
+`<a id="actividades">`{=html}`</a>`{=html} ## Actividades del
 estudiante
 
 La práctica contempla las siguientes actividades para el desarrollo y
@@ -1020,7 +948,7 @@ análisis del modelo matemático:
 
 ------------------------------------------------------------------------
 
-`<a id="estructura">`{=html}`</a>`{=html} \## Estructura del repositorio
+`<a id="estructura">`{=html}`</a>`{=html} ## Estructura del repositorio
 
 Los archivos de la práctica se organizan en la carpeta principal del
 repositorio:
@@ -1050,7 +978,7 @@ nombres de archivo.
 
 ------------------------------------------------------------------------
 
-`<a id="requisitos">`{=html}`</a>`{=html} \## Requisitos
+`<a id="requisitos">`{=html}`</a>`{=html} ## Requisitos
 
 ### Software
 
@@ -1083,7 +1011,7 @@ experimentales de la práctica.
 
 ------------------------------------------------------------------------
 
-`<a id="reproducibilidad">`{=html}`</a>`{=html} \## Reproducibilidad y
+`<a id="reproducibilidad">`{=html}`</a>`{=html} ## Reproducibilidad y
 entregables
 
 ### Secuencia de reproducción
@@ -1170,7 +1098,7 @@ mediciones experimentales.
 
 ------------------------------------------------------------------------
 
-`<a id="referencias">`{=html}`</a>`{=html} \## Referencias
+`<a id="referencias">`{=html}`</a>`{=html} ## Referencias
 
 \[1\] P. A. Valle, *Syllabus para Modelado de Sistemas Fisiológicos*,
 Tecnológico Nacional de México / Instituto Tecnológico de Tijuana,
