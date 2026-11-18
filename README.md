@@ -652,8 +652,7 @@ lazo abierto.
 ------------------------------------------------------------------------
 
 <a id="matlab"></a> 
-## Implementación en MATLAB y
-Simulink
+## Implementación en MATLAB y Simulink
 
 La implementación computacional se realiza mediante MATLAB y Simulink,
 utilizando dos subsistemas principales que representan las condiciones
@@ -740,8 +739,7 @@ MATLAB/Simulink.
 ------------------------------------------------------------------------
 
 <a id="circuito"></a> 
-## Implementación física del
-circuito RLC
+## Implementación física del circuito RLC
 
 Además de las simulaciones computacionales, la práctica contempla la
 construcción física de los circuitos eléctricos equivalentes mediante un
@@ -801,8 +799,7 @@ equivalente del sistema endocrino.`</sub>`{=html}
 ------------------------------------------------------------------------
 
 <a id="resultados"></a> 
-## Resultados y comparación
-de respuestas
+## Resultados y comparación de respuestas
 
 Los resultados de la práctica permiten comparar el comportamiento del
 sistema endocrino bajo las dos condiciones fisiológicas establecidas,
@@ -1014,10 +1011,6 @@ MSFP4/
 ├── modelo_endocrino.slx
 └── demás archivos de la práctica
 ```
-
-**Nota:** los nombres de los archivos pueden modificarse de acuerdo con
-los documentos, programas y evidencias finales incluidos en el
-repositorio.
 
 Las imágenes del diagrama del sistema endocrino y del circuito físico se
 encuentran en la misma carpeta que el archivo `README.md`. Por lo tanto,
