@@ -251,15 +251,26 @@ eléctricas.
 
 ### 4. Parámetros utilizados
 
-Los parámetros del circuito eléctrico equivalente para ambas condiciones
-son:
+Los parámetros del circuito eléctrico equivalente se agrupan de la
+siguiente manera para cada condición:
 
-  Parámetro     CONTROL (función normal)   CASO (síndrome de Cushing)
-  ----------- -------------------------- ----------------------------
-  $R_1$                             1 kΩ                         1 kΩ
-  $L$                             100 mH                       100 mH
-  $C$                               1 µF                      1000 µF
-  $R_2$                           100 kΩ                         1 kΩ
+**CONTROL (función normal)**
+
+| Componente | Valor |
+|---|---:|
+| $R_1$ | 1 kΩ |
+| $R_2$ | 100 kΩ |
+| $L$ | 100 mH |
+| $C$ | 1 µF |
+
+**CASO (síndrome de Cushing)**
+
+| Componente | Valor |
+|---|---:|
+| $R_1$ | 1 kΩ |
+| $R_2$ | 1 kΩ |
+| $L$ | 100 mH |
+| $C$ | 1,000 µF |
 
 La principal diferencia paramétrica entre ambas condiciones corresponde
 a los valores de la capacitancia $C$ y la resistencia $R_2$.
