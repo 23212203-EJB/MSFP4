@@ -1003,12 +1003,19 @@ repositorio:
 MSFP4/
 │
 ├── README.md
-├── Analisis_matematico.pdf
-├── diagrama_sistema_endocrino.png
-├── circuito_fisico_endocrino.jpeg
-├── modelo_endocrino.py
-├── modelo_endocrino.slx
-└── demás archivos de la práctica
+├── Analisis matemático.pdf
+├── CITATION.cff
+├── Circuito_físico.jpeg
+├── Control_caso_python.pdf
+├── Control_y_Caso.pdf
+├── Diagrama_sistema_endocrino.jpeg
+├── Gráfica_lab.bmp
+├── LICENSE
+├── P4_Jauregui23212203.mlx
+├── P4_Jauregui23212203.pdf
+├── Parámetros PID.jpeg
+├── Práctica_4.py
+└── Sistema_4_2024b.slx
 ```
 
 Las imágenes del diagrama del sistema endocrino y del circuito físico se
