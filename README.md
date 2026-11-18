@@ -791,7 +791,7 @@ eléctricos.
 
 **Montaje físico del circuito eléctrico:**
 
-![Circuito físico RLC](circuito_fisico_endocrino.jpeg)
+![Circuito físico RLC](Circuito_físico.jpeg)
 
 `<sub>`{=html}Figura. Implementación física del circuito eléctrico
 equivalente del sistema endocrino.`</sub>`{=html}
@@ -885,7 +885,7 @@ eléctrica, facilitando la interpretación de los cambios fisiológicos
 asociados a las condiciones CONTROL y CASO.
 
 ![Diagrama del sistema endocrino: comparación entre CONTROL y CASO
-(síndrome de Cushing)](diagrama_sistema_endocrino.png)
+(síndrome de Cushing)](Diagrama_sistema_endocrino.jpeg)
 
 `<sub>`{=html}Figura. Representación del sistema endocrino y su modelo
 eléctrico equivalente en condiciones CONTROL y CASO (síndrome de
