@@ -310,8 +310,6 @@ y los componentes eléctricos.
 La corriente de entrada se representa mediante:
 
 ```math
-\begin{aligned}
-\begin{aligned}
 F_e(t)=F_c(t)+F_s(t)
 ```
 
@@ -407,20 +405,14 @@ parámetros:
 ```math
 R_1=1\,k\Omega \\ 
 R_2=100\,k\Omega
-\end{aligned} \\ 
-\begin{aligned}
 L=100\,mH \\ 
 C=1\,\mu F
-\end{aligned}
-\end{aligned}
 ```
 
 La función de transferencia correspondiente se obtiene sustituyendo los
 parámetros de CONTROL en la función de transferencia general:
 
 ```math
-\begin{aligned}
-\begin{aligned}
 G_C(s)=
 \frac{(100\,mH)s+100\,k\Omega}
 {(1\,k\Omega)(100\,mH)(1\,\mu F)s^2+
@@ -436,20 +428,14 @@ parámetros:
 ```math
 R_1=1\,k\Omega \\ 
 R_2=1\,k\Omega
-\end{aligned} \\ 
-\begin{aligned}
 L=100\,mH \\ 
 C=1000\,\mu F
-\end{aligned}
-\end{aligned}
 ```
 
 La función de transferencia correspondiente se obtiene sustituyendo los
 parámetros del CASO en la función de transferencia general:
 
 ```math
-\begin{aligned}
-\begin{aligned}
 G_A(s)=
 \frac{(100\,mH)s+1\,k\Omega}
 {(1\,k\Omega)(100\,mH)(1000\,\mu F)s^2+
@@ -490,10 +476,7 @@ Donde:
 ```math
 a=R_1LC \\ 
 b=L+R_1R_2C
-\end{aligned} \\ 
-\begin{aligned}
 c=R_1+R_2
-\end{aligned}
 ```
 
 **CONTROL**
@@ -510,7 +493,6 @@ Se obtienen los siguientes polos:
 ```math
 \lambda_1=-1,010.01 \\ 
 \lambda_2=-999.99\times10^3
-\end{aligned}
 ```
 
 **CASO**
@@ -525,10 +507,8 @@ Utilizando los parámetros:
 Se obtienen los siguientes polos:
 
 ```math
-\begin{aligned}
 \lambda_1=-2.0002 \\ 
 \lambda_2=-9.9999\times10^3
-\end{aligned}
 ```
 
 De acuerdo con los valores obtenidos, ambos modelos presentan polos con
