@@ -193,40 +193,15 @@ fisiológica del organismo.
 
 El modelo contempla la interacción entre los siguientes elementos:
 
-  -----------------------------------------------------------------------
-  Elemento fisiológico    Representación          Descripción
-  ----------------------- ----------------------- -----------------------
-  Hipotálamo              Fuente de señal         Libera la hormona
-                                                  liberadora de
-                                                  corticotropina (CRH)
-
-  Hipófisis anterior      Etapa de regulación     Libera la hormona
-                                                  adrenocorticotrópica
-                                                  (ACTH)
-
-  Glándula suprarrenal    Órgano de respuesta     Participa en la
-                                                  producción y liberación
-                                                  de cortisol
-
-  Transporte hormonal     Resistencia $R_1$       Representa las pérdidas
-                                                  u oposición al
-                                                  transporte de CRH/ACTH
-
-  Almacenamiento hormonal Capacitancia $C$        Representa el
-                                                  almacenamiento temporal
-                                                  de hormonas en sangre o
-                                                  compartimentos
-
-  Respuesta del órgano    Inductancia $L$         Representa la inercia o
-  diana                                           retardo de la respuesta
-                                                  de la corteza
-                                                  suprarrenal
-
-  Utilización y           Resistencia $R_2$       Representa la
-  eliminación                                     utilización, disipación
-                                                  o eliminación del
-                                                  cortisol
-  -----------------------------------------------------------------------
+| Elemento fisiológico | Representación | Descripción |
+|---|---|---|
+| Hipotálamo | Fuente de señal | Libera la hormona liberadora de corticotropina (CRH). |
+| Hipófisis anterior | Etapa de regulación | Libera la hormona adrenocorticotrópica (ACTH). |
+| Glándula suprarrenal | Órgano de respuesta | Participa en la producción y liberación de cortisol. |
+| Transporte hormonal | Resistencia $R_1$ | Representa las pérdidas u oposición al transporte de CRH/ACTH. |
+| Almacenamiento hormonal | Capacitancia $C$ | Representa el almacenamiento temporal de hormonas en sangre o compartimentos. |
+| Respuesta del órgano diana | Inductancia $L$ | Representa la inercia o retardo de la respuesta de la corteza suprarrenal. |
+| Utilización y eliminación | Resistencia $R_2$ | Representa la utilización, disipación o eliminación del cortisol. |
 
 El modelo también contempla la retroalimentación negativa del cortisol
 sobre los centros de regulación hormonal.
@@ -402,10 +377,12 @@ Para la condición de función normal se utilizan los siguientes
 parámetros:
 
 ```math
-R_1=1\,k\Omega \\ 
-R_2=100\,k\Omega
-L=100\,mH \\ 
-C=1\,\mu F
+\begin{aligned}
+R_1 &= 1\,k\Omega \\
+R_2 &= 100\,k\Omega \\
+L &= 100\,mH \\
+C &= 1\,\mu F
+\end{aligned}
 ```
 
 La función de transferencia correspondiente se obtiene sustituyendo los
@@ -425,10 +402,12 @@ Para la condición de síndrome de Cushing se utilizan los siguientes
 parámetros:
 
 ```math
-R_1=1\,k\Omega \\ 
-R_2=1\,k\Omega  \\
-L=100\,mH \\ 
-C=1000\,\mu F\\
+\begin{aligned}
+R_1 &= 1\,k\Omega \\
+R_2 &= 1\,k\Omega \\
+L &= 100\,mH \\
+C &= 1000\,\mu F
+\end{aligned}
 ```
 
 La función de transferencia correspondiente se obtiene sustituyendo los
@@ -472,9 +451,11 @@ Los polos del sistema se obtienen mediante la ecuación cuadrática:
 Donde:
 
 ```math
-a=R_1LC \\ 
-b=L+R_1R_2C \\
-c=R_1+R_2 \\
+\begin{aligned}
+a &= R_1LC \\
+b &= L+R_1R_2C \\
+c &= R_1+R_2
+\end{aligned}
 ```
 
 **CONTROL**
@@ -489,8 +470,10 @@ Utilizando los parámetros:
 Se obtienen los siguientes polos:
 
 ```math
-\lambda_1=-1,010.01 \\ 
-\lambda_2=-999.99\times10^3 \\
+\begin{aligned}
+\lambda_1 &= -1,010.01 \\
+\lambda_2 &= -999.99\times10^3
+\end{aligned}
 ```
 
 **CASO**
@@ -505,8 +488,10 @@ Utilizando los parámetros:
 Se obtienen los siguientes polos:
 
 ```math
-\lambda_1=-2.0002 \\ 
-\lambda_2=-9.9999\times10^3 \\
+\begin{aligned}
+\lambda_1 &= -2.0002 \\
+\lambda_2 &= -9.9999\times10^3
+\end{aligned}
 ```
 
 De acuerdo con los valores obtenidos, ambos modelos presentan polos con
