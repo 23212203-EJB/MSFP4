@@ -12,16 +12,16 @@ authors:
     family-names: Jauregui Bogarin
     email: L23212203@tijuana.tecnm.mx
     affiliation: TecNM / IT Tijuana
-repository-code: 'https://github.com/23212203-EJB/MSFP3'
+repository-code: 'https://github.com/23212203-EJB/MSFP4'
 keywords:
-  - Musculoesquelético
-  - Atrofia muscular
-  - Modelo mecánico
+  - Sistema endocrino
+  - Síndrome de Cushing
+  - Hipercortisolismo
+  - Circuito RLC
   - Analogía eléctrica
-  - Principio de superposición
   - Función de transferencia
-  - Estabilidad
-  - Simulaciones numéricas
+  - Ecuaciones integro-diferenciales
+  - Controlador PID
 license: BSD-2-Clause-FreeBSD
 version: '1.0'
-date-released: '2026-11-03'
+date-released: '2026-11-17'
