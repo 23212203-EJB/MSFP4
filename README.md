@@ -182,8 +182,7 @@ competencia general de la asignatura.
 ------------------------------------------------------------------------
 
 <a id="analogia"></a> 
-## Modelo fisiológico y
-analogía eléctrica
+## Modelo fisiológico y analogía eléctrica
 
 ### 1. Modelo fisiológico del sistema endocrino
 
@@ -427,9 +426,9 @@ parámetros:
 
 ```math
 R_1=1\,k\Omega \\ 
-R_2=1\,k\Omega
+R_2=1\,k\Omega  \\
 L=100\,mH \\ 
-C=1000\,\mu F
+C=1000\,\mu F\\
 ```
 
 La función de transferencia correspondiente se obtiene sustituyendo los
@@ -452,8 +451,7 @@ comportamiento del modelo ante una misma señal de entrada.
 ------------------------------------------------------------------------
 
 <a id="analisis"></a> 
-## Análisis de estabilidad y
-error en estado estacionario
+## Análisis de estabilidad y error en estado estacionario
 
 ### 1. Estabilidad en lazo abierto
 
@@ -475,8 +473,8 @@ Donde:
 
 ```math
 a=R_1LC \\ 
-b=L+R_1R_2C
-c=R_1+R_2
+b=L+R_1R_2C \\
+c=R_1+R_2 \\
 ```
 
 **CONTROL**
@@ -492,7 +490,7 @@ Se obtienen los siguientes polos:
 
 ```math
 \lambda_1=-1,010.01 \\ 
-\lambda_2=-999.99\times10^3
+\lambda_2=-999.99\times10^3 \\
 ```
 
 **CASO**
@@ -508,7 +506,7 @@ Se obtienen los siguientes polos:
 
 ```math
 \lambda_1=-2.0002 \\ 
-\lambda_2=-9.9999\times10^3
+\lambda_2=-9.9999\times10^3 \\
 ```
 
 De acuerdo con los valores obtenidos, ambos modelos presentan polos con
