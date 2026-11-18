@@ -605,8 +605,7 @@ en estado estacionario de ambas condiciones fisiológicas.
 ------------------------------------------------------------------------
 
 <a id="senales"></a> 
-## Señal de entrada y
-condiciones de simulación
+## Señal de entrada y condiciones de simulación
 
 La señal utilizada para evaluar el comportamiento de los modelos
 corresponde a una **entrada escalón**, representada mediante $V_e(t)$.
@@ -638,6 +637,7 @@ respectivas respuestas.
   Salida CASO             $V_s(t)$                Voltaje de salida del
                                                   circuito de síndrome de
                                                   Cushing
+                                                  
   -----------------------------------------------------------------------
 
 La simulación permite observar las diferencias entre ambas condiciones
