@@ -31,7 +31,8 @@ México.
 
 ------------------------------------------------------------------------
 
-<a id="contenido"></a> ## Contenido
+<a id="contenido"></a> 
+## Contenido
 
 1.  [Resumen](#resumen)
 2.  [Competencia y objetivos](#objetivos)
@@ -54,7 +55,8 @@ México.
 
 ------------------------------------------------------------------------
 
-<a id="resumen"></a> ## Resumen
+<a id="resumen"></a> 
+## Resumen
 
 La práctica tiene como propósito **modelar, analizar y simular el
 comportamiento del sistema endocrino** mediante una analogía entre un
@@ -88,7 +90,8 @@ estabilidad; MATLAB; Simulink; Python; protoboard; osciloscopio.
 
 ------------------------------------------------------------------------
 
-<a id="objetivos"></a> ## Competencia y objetivos
+<a id="objetivos"></a> 
+## Competencia y objetivos
 
 ### Competencia a desarrollar
 
@@ -134,7 +137,8 @@ mediante instrumentación electrónica.
 
 ------------------------------------------------------------------------
 
-<a id="temario"></a> ## Relación con el temario
+<a id="temario"></a> 
+## Relación con el temario
 
 La práctica integra contenidos de la asignatura **Modelado de Sistemas
 Fisiológicos (IBF-1020)**, relacionando los fundamentos del modelado
@@ -177,7 +181,8 @@ competencia general de la asignatura.
 
 ------------------------------------------------------------------------
 
-<a id="analogia"></a> ## Modelo fisiológico y
+<a id="analogia"></a> 
+## Modelo fisiológico y
 analogía eléctrica
 
 ### 1. Modelo fisiológico del sistema endocrino
@@ -293,7 +298,8 @@ eliminación del cortisol.
 
 ------------------------------------------------------------------------
 
-<a id="modelo"></a> ## Formulación matemática
+<a id="modelo"></a> 
+## Formulación matemática
 
 ### 1. Ecuaciones integro-diferenciales
 
@@ -459,7 +465,8 @@ comportamiento del modelo ante una misma señal de entrada.
 
 ------------------------------------------------------------------------
 
-<a id="analisis"></a> ## Análisis de estabilidad y
+<a id="analisis"></a> 
+## Análisis de estabilidad y
 error en estado estacionario
 
 ### 1. Estabilidad en lazo abierto
@@ -623,7 +630,8 @@ en estado estacionario de ambas condiciones fisiológicas.
 
 ------------------------------------------------------------------------
 
-<a id="senales"></a> ## Señal de entrada y
+<a id="senales"></a> 
+## Señal de entrada y
 condiciones de simulación
 
 La señal utilizada para evaluar el comportamiento de los modelos
@@ -669,7 +677,8 @@ lazo abierto.
 
 ------------------------------------------------------------------------
 
-<a id="matlab"></a> ## Implementación en MATLAB y
+<a id="matlab"></a> 
+## Implementación en MATLAB y
 Simulink
 
 La implementación computacional se realiza mediante MATLAB y Simulink,
@@ -727,7 +736,8 @@ las simulaciones.
 
 ------------------------------------------------------------------------
 
-<a id="python"></a> ## Reproducción en Python
+<a id="python"></a> 
+## Reproducción en Python
 
 La implementación en Python se realiza mediante **Visual Studio Code**,
 con el propósito de reproducir y comparar las respuestas obtenidas en
@@ -755,7 +765,8 @@ MATLAB/Simulink.
 
 ------------------------------------------------------------------------
 
-<a id="circuito"></a> ## Implementación física del
+<a id="circuito"></a> 
+## Implementación física del
 circuito RLC
 
 Además de las simulaciones computacionales, la práctica contempla la
@@ -815,7 +826,8 @@ equivalente del sistema endocrino.`</sub>`{=html}
 
 ------------------------------------------------------------------------
 
-<a id="resultados"></a> ## Resultados y comparación
+<a id="resultados"></a> 
+## Resultados y comparación
 de respuestas
 
 Los resultados de la práctica permiten comparar el comportamiento del
@@ -875,8 +887,8 @@ ambas condiciones.
 
 ------------------------------------------------------------------------
 
-<a id="diagrama"></a> ## Diagrama del sistema
-endocrino
+<a id="diagrama"></a> 
+## Diagrama del sistema endocrino
 
 A continuación, se presenta una representación gráfica del sistema
 endocrino, elaborada en **BioRender**, que permite visualizar los
@@ -910,7 +922,8 @@ Cushing). Elaboración propia mediante BioRender.`</sub>`{=html}
 
 ------------------------------------------------------------------------
 
-<a id="flujo"></a> ## Flujo de trabajo
+<a id="flujo"></a> 
+## Flujo de trabajo
 
 ``` mermaid
 flowchart TD
@@ -943,8 +956,8 @@ y la comprobación experimental de las dos condiciones fisiológicas.
 
 ------------------------------------------------------------------------
 
-<a id="actividades"></a> ## Actividades del
-estudiante
+<a id="actividades"></a> 
+## Actividades del estudiante
 
 La práctica contempla las siguientes actividades para el desarrollo y
 análisis del modelo matemático:
@@ -1010,7 +1023,8 @@ análisis del modelo matemático:
 
 ------------------------------------------------------------------------
 
-<a id="estructura"></a> ## Estructura del repositorio
+<a id="estructura"></a> 
+## Estructura del repositorio
 
 Los archivos de la práctica se organizan en la carpeta principal del
 repositorio:
@@ -1040,7 +1054,8 @@ nombres de archivo.
 
 ------------------------------------------------------------------------
 
-<a id="requisitos"></a> ## Requisitos
+<a id="requisitos"></a> 
+## Requisitos
 
 ### Software
 
@@ -1073,8 +1088,8 @@ experimentales de la práctica.
 
 ------------------------------------------------------------------------
 
-<a id="reproducibilidad"></a> ## Reproducibilidad y
-entregables
+<a id="reproducibilidad"></a> 
+## Reproducibilidad y entregables
 
 ### Secuencia de reproducción
 
@@ -1160,7 +1175,8 @@ mediciones experimentales.
 
 ------------------------------------------------------------------------
 
-<a id="referencias"></a> ## Referencias
+<a id="referencias"></a> 
+## Referencias
 
 \[1\] P. A. Valle, *Syllabus para Modelado de Sistemas Fisiológicos*,
 Tecnológico Nacional de México / Instituto Tecnológico de Tijuana,
